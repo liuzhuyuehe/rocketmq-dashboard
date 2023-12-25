@@ -277,6 +277,18 @@
 
     </dependencies>
     <build>
+        <finalName>rocketmq-dashboard</finalName>
+        <!-- 打包资源文件 -->
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+            <resource>
+                <directory>deploy</directory>
+                <targetPath>${project.build.directory}</targetPath>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
