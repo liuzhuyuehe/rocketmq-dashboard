@@ -16,7 +16,7 @@
 #
 
 server:
-  port: 8080
+  port: 6088
   servlet:
     encoding:
       charset: UTF-8
