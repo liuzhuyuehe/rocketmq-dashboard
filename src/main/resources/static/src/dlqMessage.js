@@ -39,7 +39,7 @@ module.controller('dlqMessageController', ['$scope', 'ngDialog', '$http', 'Notif
         }
     });
     $scope.timepickerBegin = moment().subtract(3, 'hour').format('YYYY-MM-DD HH:mm');
-    $scope.timepickerEnd = moment().format('YYYY-MM-DD HH:mm');
+    $scope.timepickerEnd = moment().add(1, 'hour').format('YYYY-MM-DD HH:mm');
     $scope.timepickerOptions = {format: 'YYYY-MM-DD HH:mm', showClear: true};
 
     $scope.taskId = "";
